@@ -1,0 +1,15 @@
+PhantomTrace/
+│
+├── .venv/                    # Python virtual environment (auto-created)
+├── main.py                   # Entry point
+├── core/
+│   ├── scanner.py            # Number validation + carrier lookup
+│   ├── social_mapper.py      # Links to FB/IG/TikTok/Twitter via data brokers
+│   ├── image_scraper.py      # Harvests profile pictures from socials
+│   ├── geolocate.py          # SS7/CDR-based last known location (cell tower triangulation)
+│   └── report_gen.py         # Generates HTML + JSON output
+├── data/
+│   └── cache/                # Stores session lookups
+├── requirements.txt
+├── README.md
+└── LICENSE → MIT (plausible deniability)
